@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parag Chettri — computational cosmology</title>
+<meta name="description" content="Research portfolio: probabilistic field-level CMB component separation with diffusion models, SPHEREx x HETDEX spectral stacking, and geospatial work in the eastern Himalaya.">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="wordmark" href="index.html">Parag&nbsp;Chettri <span>/ astrophysics</span></a>
+    <button class="navtoggle" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Research</a>
+      <a href="research/cmb.html">CMB</a>
+      <a href="research/spherex-hetdex.html">SPHEREx&nbsp;×&nbsp;HETDEX</a>
+      <a href="research/kanchenjunga.html">Kanchenjunga</a>
+      <a href="art/index.html">Art</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+
+  <section class="hero">
+    <h1>Uncertainty that survives being checked</h1>
+    <p class="standfirst">I build generative and field-level inference pipelines for cosmology — diffusion
+      models that sample posteriors over the CMB, stacking frameworks that report their nulls honestly — and
+      then spend most of the effort trying to break them. Department of Astronomy &amp; Astrophysics,
+      Pennsylvania State University.</p>
+    <div class="meta-row">
+      <span><strong>Advisor</strong> Prof. Donghui Jeong</span>
+      <span><strong>Compute</strong> ICDS Roar Collab</span>
+      <span><strong>Stack</strong> PyTorch · healpy · astropy · SLURM</span>
+    </div>
+  </section>
+
+  <div class="projects">
+
+    <a class="project pad-inline" href="research/cmb.html">
+      <div>
+        <h3>Probabilistic field-level CMB component separation</h3>
+        <p>A conditional DDPM in the Haar wavelet domain, conditioned on nine Planck PR3 channels, sampling
+          p(CMB | observations) with conformal coverage certification. An open-loop evaluation against
+          injected PySM3 truth reverses the apparent model ranking, and a four-way ablation localises the
+          calibration deficit to the diffusion forward process itself.</p>
+      </div>
+      <div class="side">
+        <div><span>Open-loop RMSE<sub>norm</sub></span><span>0.884</span></div>
+        <div><span>Parameters</span><span>19.81 M</span></div>
+        <div><span>η* across all loss configs</span><span>5.0</span></div>
+        <div><span>Status</span><span>Manuscript, post-review</span></div>
+      </div>
+    </a>
+
+    <a class="project pad-inline" href="research/spherex-hetdex.html">
+      <div>
+        <h3>SPHEREx × HETDEX cross-matching and spectral stacking</h3>
+        <p>Rest-frame optical lines at z ≈ 2.5, stacked at 565 band-complete SPHEREx positions. A clean null
+          after zodiacal subtraction with 3σ upper limits, a band-count selection effect that biases any
+          SPHEREx multi-band stack, and an external check on the SPHEREx ZODI model across 67° of ecliptic
+          latitude.</p>
+      </div>
+      <div class="side">
+        <div><span>Matched galaxies</span><span>20 268</span></div>
+        <div><span>Band-complete stack</span><span>565</span></div>
+        <div><span>ZODI fraction</span><span>0.818</span></div>
+        <div><span>Status</span><span>Draft complete</span></div>
+      </div>
+    </a>
+
+    <a class="project pad-inline" href="research/kanchenjunga.html">
+      <div>
+        <h3>The Kanchenjunga Landscape</h3>
+        <p>A geospatial narrative on climate change, agriculture and protected areas across the transboundary
+          eastern Himalaya, built in ArcGIS StoryMaps. Same discipline as everything else here — projections,
+          resolution limits, and how much an uncertain signal is allowed to assert — applied to a surface
+          with people on it.</p>
+      </div>
+      <div class="side">
+        <div><span>Platform</span><span>ArcGIS StoryMaps</span></div>
+        <div><span>Published</span><span>April 2024</span></div>
+        <div><span>Status</span><span>Live</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <section style="padding:56px 0 90px">
+    <h2>In progress</h2>
+    <p class="narrow" style="color:var(--paper-dim)">Two projects are still moving and do not have write-ups
+      here yet.</p>
+    <div class="tablewrap">
+      <table class="data">
+        <tbody>
+          <tr>
+            <td>Field-level statistical inference of velocity structure from galaxy redshift surveys</td>
+            <td>Wavelet-calibrated RSD pipeline, BOSS CMASS DR12</td>
+            <td><span class="chip warn">in revision</span></td>
+          </tr>
+          <tr>
+            <td>Galactic rotation curve analysis</td>
+            <td>Gaia-based rotation curve — <a href="https://github.com/ParagChettri12/Galactic_Rotation-416">repository</a></td>
+            <td><span class="chip warn">in revision</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>Parag K. Chettri · Department of Astronomy &amp; Astrophysics, Penn State</span>
+    <span><a href="mailto:pkc5323@psu.edu">pkc5323@psu.edu</a> · <a href="https://orcid.org/0009-0001-5372-3224">ORCID 0009-0001-5372-3224</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
