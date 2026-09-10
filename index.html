@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5F4EF">
+<title>Parag Chettri — computational cosmology</title>
+<meta name="description" content="Probabilistic field-level CMB component separation with diffusion models, SPHEREx × HETDEX spectral stacking, and geospatial work in the eastern Himalaya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="shell masthead-inner">
+    <a class="wordmark" href="index.html">Parag&nbsp;Chettri <i>astrophysics</i></a>
+    <button class="navtoggle" aria-expanded="false">Menu</button>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Research</a>
+      <a href="research/cmb.html">CMB</a>
+      <a href="research/spherex-hetdex.html">SPHEREx</a>
+      <a href="research/kanchenjunga.html">Kanchenjunga</a>
+      <a href="art/index.html">Art</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="shell">
+    <section class="hero">
+      <div class="kicker">Pennsylvania State University</div>
+      <h1>Uncertainty that <em>survives</em> being checked.</h1>
+      <p class="standfirst">I build generative and field-level inference pipelines for cosmology —
+        diffusion models that sample posteriors over the CMB, stacking frameworks that report their
+        nulls honestly — and then spend most of the effort trying to break them.</p>
+      <div class="meta-row">
+        <span><strong>Advisor</strong>Prof. Donghui Jeong</span>
+        <span><strong>Department</strong>Astronomy &amp; Astrophysics</span>
+        <span><strong>Compute</strong>ICDS Roar Collab</span>
+        <span><strong>Stack</strong>PyTorch · healpy · astropy · SLURM</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="shell">
+    <div class="contents">
+
+      <a class="entry" href="research/cmb.html">
+        <div>
+          <h3>Probabilistic field-level CMB component separation</h3>
+          <p>A conditional DDPM in the Haar wavelet domain, conditioned on nine Planck PR3 channels,
+            sampling p(CMB&nbsp;|&nbsp;observations) with conformal coverage certification. An open-loop
+            evaluation against injected PySM3 truth reverses the apparent model ranking, and a four-way
+            ablation localises the calibration deficit to the diffusion forward process itself.</p>
+        </div>
+        <div class="facts">
+          <div><span>Open-loop RMSE</span><span>0.884</span></div>
+          <div><span>Parameters</span><span>19.81 M</span></div>
+          <div><span>η* all configs</span><span>5.0</span></div>
+          <div><span>Status</span><span>Post-review</span></div>
+        </div>
+      </a>
+
+      <a class="entry" href="research/spherex-hetdex.html">
+        <div>
+          <h3>SPHEREx × HETDEX cross-matching and spectral stacking</h3>
+          <p>Rest-frame optical lines at z&nbsp;≈&nbsp;2.5, stacked at 565 band-complete SPHEREx
+            positions. A clean null after zodiacal subtraction with 3σ upper limits, a band-count
+            selection effect that biases any SPHEREx multi-band stack, and an external check on the
+            SPHEREx ZODI model across 67° of ecliptic latitude.</p>
+        </div>
+        <div class="facts">
+          <div><span>Matched</span><span>20 268</span></div>
+          <div><span>Band-complete</span><span>565</span></div>
+          <div><span>ZODI fraction</span><span>0.818</span></div>
+          <div><span>Status</span><span>Draft complete</span></div>
+        </div>
+      </a>
+
+      <a class="entry" href="research/kanchenjunga.html">
+        <div>
+          <h3>The Kanchenjunga Landscape</h3>
+          <p>A geospatial narrative on climate change, agriculture and protected areas across the
+            transboundary eastern Himalaya, built in ArcGIS StoryMaps. The same discipline as everything
+            else here — projections, resolution limits, and how much an uncertain signal is allowed to
+            assert — applied to a surface with people on it.</p>
+        </div>
+        <div class="facts">
+          <div><span>Platform</span><span>ArcGIS StoryMaps</span></div>
+          <div><span>Published</span><span>April 2024</span></div>
+          <div><span>Status</span><span>Live</span></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <section class="plate bleed">
+    <div class="plate-inner">
+      <div class="plate-head">
+        <div>
+          <span class="label">Still moving</span>
+          <h3>Two projects without write-ups yet</h3>
+        </div>
+      </div>
+      <div class="tablewrap">
+        <table class="data">
+          <tbody>
+            <tr>
+              <td>Field-level statistical inference of velocity structure from galaxy redshift surveys</td>
+              <td>Wavelet-calibrated RSD pipeline · BOSS CMASS DR12</td>
+              <td><span class="chip warn">in revision</span></td>
+            </tr>
+            <tr>
+              <td>Galactic rotation curve analysis</td>
+              <td>Gaia-based rotation curve · <a href="https://github.com/ParagChettri12/Galactic_Rotation-416">repository</a></td>
+              <td><span class="chip warn">in revision</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="plate-note">Both are close enough to finished that the numbers would change if I wrote
+        them up today. They'll get pages when they stop moving.</p>
+    </div>
+  </section>
+
+  <div class="shell">
+    <section style="padding:0 0 clamp(70px,10vw,120px)">
+      <div class="narrow">
+        <h2>How to read this site</h2>
+        <p>Each research page opens with a single interactive control that carries that project's central
+          finding — flip it and the result changes in front of you. Everything below is the argument, with
+          the failures kept in rather than edited out.</p>
+        <p>Every number comes from a result file rather than a manuscript table. If you want to check one,
+          <a href="contact.html">ask</a> — I'd rather send the JSON than have you take the page's word for it.</p>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot-inner">
+    <span>Parag K. Chettri · Department of Astronomy &amp; Astrophysics, Penn State</span>
+    <span><a href="mailto:pkc5323@psu.edu">pkc5323@psu.edu</a> · <a href="https://orcid.org/0009-0001-5372-3224">ORCID 0009-0001-5372-3224</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
